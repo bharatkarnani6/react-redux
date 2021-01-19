@@ -1,10 +1,11 @@
-import react from 'react';
+import react, { useState } from 'react';
 import { connect } from 'react-redux';
 import { buyBook } from '../Redux/index';
 function BookComponent(props) {
     return (
         <div>
-            <h1>Number of Books: {props.numberOfBooks}</h1>
+            <h1>Book Component</h1>
+            <h2>Number of Books: {props.numberOfBooks}</h2>
             <button onClick={props.buyBook}>Buy Book</button>
         </div>
     );
